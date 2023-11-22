@@ -68,7 +68,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 0rem;
     background-color: var(--background-dark);
     color: var(--text-sand-light);
 

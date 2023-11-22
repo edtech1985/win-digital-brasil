@@ -1,4 +1,4 @@
-import { Section } from "./styles";
+import { Section, Title } from "./styles";
 
 export const Section09Footer = () => {
   const getYear = () => {
@@ -10,7 +10,7 @@ export const Section09Footer = () => {
   return (
     <>
       <Section>
-        <h4>Escale Seu Negócio</h4>
+        <Title>Escale Seu Negócio</Title>
         <p>
           Copyright © {getYear()} Win Digital Brasil | Todos os direitos
           reservados

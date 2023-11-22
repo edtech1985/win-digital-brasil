@@ -6,6 +6,7 @@ import {
   CardsContainer,
   Content,
   Section,
+  Title,
 } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -20,10 +21,10 @@ export const Section03 = () => {
     <>
       <Section>
         <Content>
-          <h3>
+          <Title>
             Como Transformar o Seu Negócio em Uma Franquia e Escalar o Seu
             Faturamento em 2024
-          </h3>
+          </Title>
           <CTAContainer>
             <CTAButton>Quero Escalar o Meu Negócio</CTAButton>
           </CTAContainer>

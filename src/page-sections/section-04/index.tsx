@@ -6,10 +6,10 @@ export const Section04 = () => {
     <>
       <Section>
         <Title>Toda pequena empresa pode ser uma grande franquia.</Title>
-        <Title>
+        <Subtitle>
           A Windigital Brasil é uma empresa de consultoria especializada em
           franquias.
-        </Title>
+        </Subtitle>
         <Subtitle>
           Nós ajudamos pequenas empresas a se tornarem grandes franquias.
         </Subtitle>

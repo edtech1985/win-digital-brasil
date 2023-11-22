@@ -14,4 +14,9 @@ export const CTAButton = styled.button`
   &:hover {
     background-color: var(--background-brown-dark);
   }
+
+  @media (max-width: 600px) {
+    font-size: 1.25rem;
+    height: auto;
+  }
 `;

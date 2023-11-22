@@ -5,7 +5,9 @@ import {
   Image,
   ImageContainer,
   Section,
+  Text,
   TextContainer,
+  Title,
 } from "./styles";
 import Mentor from "../../assets/curso-como-franquear.jpg";
 
@@ -15,15 +17,15 @@ export const Section07Mentor = () => {
       <Section>
         <Container>
           <TextContainer>
-            <h1>Como faturar 7 MILHÕES por mês com franquias</h1>
-            <p>
+            <Title>Como faturar 7 MILHÕES por mês com franquias</Title>
+            <Text>
               Se você é um empreendedor que sonha em faturar alto, mas não sabe
               como fazer isso, este curso é para você. Marcos Junior, o mentor
               desse curso, é um especialista em franquias que já faturou mais de
               7 milhões de reais com seu negócio. Em apenas 2 anos, Marcos
               Junior transformou sua pequena empresa em uma franquia de sucesso,
               com mais de 100 unidades espalhadas pelo Brasil.
-            </p>
+            </Text>
             <p>
               Neste curso, Marcos Junior vai te ensinar tudo o que você precisa
               saber para franquear seu negócio e alcançar o sucesso. Ele vai te

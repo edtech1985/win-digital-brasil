@@ -10,12 +10,12 @@ export const Section06 = () => {
             <Text>
               <ul>
                 <li>
-                  Precisa de muito capital acumulado para abrir novas unidades
+                  Precisa de muito capital para abrir novas unidades
                 </li>
                 <li>Você tem que fazer a gestão de cada uma das unidades</li>
                 <li>Gasta muito a cada unidade aberta</li>
                 <li>
-                  Você é responsável pelos funcionários de todas as unidades
+                  Você é responsável por funcionários de todas as unidades
                 </li>
                 <li>Precisa cuidar 100% do operacional</li>
                 <li>Pouco escalável</li>

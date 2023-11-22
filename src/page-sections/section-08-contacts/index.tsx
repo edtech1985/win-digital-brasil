@@ -6,7 +6,6 @@ export const Section08Contacts = () => {
       <Section>
         <p>Contato</p>
         <p>Telefone</p>
-        <p>Endereço</p>
         <p>Redes Sociais</p>
       </Section>
     </>

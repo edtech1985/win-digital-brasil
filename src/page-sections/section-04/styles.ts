@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  width: 100vw;
-  padding: 2rem 0;
+  max-width: 100vw;
+  width: 100%;
+  height: auto;
+  padding: 2rem;
   margin: 0 0 0 0;
   position: relative;
   overflow: hidden;
@@ -18,6 +20,10 @@ export const Title = styled.h2`
   margin: 0 0 1rem 0;
   padding: 0 0 0 0;
   white-space: break-spaces;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Subtitle = styled.h3`
@@ -27,6 +33,10 @@ export const Subtitle = styled.h3`
   text-align: center;
   margin: 0 0 1rem 0;
   padding: 0 0 0 0;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.25rem;
+  }
 `;
 
 export const Text = styled.p`

@@ -7,10 +7,13 @@ export const Section = styled.section`
   overflow: hidden;
   z-index: 1;
   background-color: #000;
+  max-width: 100vw;
+  width: 100%;
+  height: auto;
 `;
 
 export const Container = styled.div`
-  padding: 0 0 0 0;
+  padding: 2rem;
   margin: 0 auto;
   max-width: 100vw;
   position: relative;
@@ -19,6 +22,12 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -27,6 +36,12 @@ export const TextContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 40vw;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h2`
@@ -37,6 +52,10 @@ export const Title = styled.h2`
   margin: 0 0 1rem 0;
   padding: 0 0 0 0;
   white-space: break-spaces;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Text = styled.p`
@@ -54,11 +73,15 @@ export const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 40vw;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const Image = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   object-position: center;
 `;

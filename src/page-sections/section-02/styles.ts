@@ -7,15 +7,14 @@ export const Section = styled.section`
   overflow: hidden;
   z-index: 1;
   margin-top: 6rem;
-`;
+  max-width: 100vw;
+  width: 100%;
+  height: auto;
 
-export const Container = styled.div`
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
+  @media screen and (max-width: 600px) {
+    margin-top: 3rem;
+    padding: 0 2rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -25,4 +24,8 @@ export const Title = styled.h1`
   text-align: center;
   margin: 0 0 1rem 0;
   padding: 0 0 0 0;
+
+  @media screen and (max-width: 600px) {
+font-size: 1.5rem;
+  }
 `;
