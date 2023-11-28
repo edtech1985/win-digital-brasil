@@ -12,7 +12,6 @@ const DivFrame = styled.div`
     overflow: hidden;
     border-radius: 15px;
     position: relative;
-
     top: 0;
     left: 0;
 

@@ -1,6 +1,6 @@
 import { Section } from "./styles";
 
-export const Section08Contacts = () => {
+export const Section010Contacts = () => {
   return (
     <>
       <Section>

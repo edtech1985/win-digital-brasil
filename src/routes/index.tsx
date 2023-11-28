@@ -5,10 +5,10 @@ import { Section02 } from "../page-sections/section-02";
 import { Section03 } from "../page-sections/section-03";
 import { Section04 } from "../page-sections/section-04";
 import { Section05 } from "../page-sections/section-05";
-import { Section09Footer } from "../page-sections/section-09-footer";
-import { Section07Mentor } from "../page-sections/section-07-mentor";
-import { Section08Contacts } from "../page-sections/section-08-contacts";
 import { Section06 } from "../page-sections/section-06";
+import { Section07 } from "../page-sections/section-07";
+import { Section010Contacts } from "../page-sections/section-010-contacts";
+import { Section011Footer } from "../page-sections/section-011-footer";
 
 export default function AppRouter() {
   return (
@@ -20,9 +20,9 @@ export default function AppRouter() {
         <Section04 />
         <Section05 />
         <Section06 />
-        <Section07Mentor />
-        <Section08Contacts />
-        <Section09Footer />
+        <Section07 />
+        <Section010Contacts />
+        <Section011Footer />
       </Router>
     </Main>
   );

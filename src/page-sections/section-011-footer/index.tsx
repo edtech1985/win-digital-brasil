@@ -1,6 +1,6 @@
 import { Section, Title } from "./styles";
 
-export const Section09Footer = () => {
+export const Section011Footer = () => {
   const getYear = () => {
     const date = new Date();
     const year = date.getFullYear();

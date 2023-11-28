@@ -4,7 +4,7 @@ export const Section02 = () => {
   return (
     <>
       <Section>
-        <Title>Como Transformar o Seu Negócio em Uma Franquia</Title>
+        <Title>Transforme Seu Negócio em uma Franquia: Curso Online</Title>
       </Section>
     </>
   );

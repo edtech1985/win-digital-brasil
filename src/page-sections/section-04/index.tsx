@@ -5,21 +5,21 @@ export const Section04 = () => {
   return (
     <>
       <Section>
-        <Title>Toda pequena empresa pode ser uma grande franquia.</Title>
-        <Subtitle>
-          A Windigital Brasil é uma empresa de consultoria especializada em
-          franquias.
-        </Subtitle>
-        <Subtitle>
-          Nós ajudamos pequenas empresas a se tornarem grandes franquias.
-        </Subtitle>
+        <Title>Por que este curso é essencial para você?</Title>
+
         <Text>
-          Você já imaginou abrir 10, 20 ou 50 unidades do seu negócio? Agora
-          imagine o custo e o tempo necessários para abrir todas essas unidades
-          por conta própria. É por isso que se você tem uma pequena empresa e
-          deseja expandir, de forma rápida e sem precisar de muito capital
-          próprio, franquear é o caminho.
+          - Experiência Comprovada: Minha trajetória no mundo das franquias deu
+          origem a estratégias eficazes, testadas e comprovadas.
         </Text>
+        <Text>
+          - Resultados Tangíveis: Aprenda a replicar seu modelo de negócio de
+          forma consistente, expandindo e multiplicando seus lucros.
+        </Text>
+        <Text>
+          - Acesso a Conhecimento Exclusivo: Desvende segredos, estratégias e
+          táticas que só os grandes empresários de franquias conhecem.
+        </Text>
+
         <CTAContainer>
           <CTAButton>Quero Escalar o Meu Negócio</CTAButton>
         </CTAContainer>

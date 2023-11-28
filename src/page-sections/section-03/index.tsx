@@ -22,8 +22,8 @@ export const Section03 = () => {
       <Section>
         <Content>
           <Title>
-            Como Transformar o Seu Negócio em Uma Franquia e Escalar o Seu
-            Faturamento em 2024
+            Seja bem-vindo ao curso que revolucionará sua abordagem empresarial,
+            transformando seu negócio em uma franquia de sucesso.
           </Title>
           <CTAContainer>
             <CTAButton>Quero Escalar o Meu Negócio</CTAButton>

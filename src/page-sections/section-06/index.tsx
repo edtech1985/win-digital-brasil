@@ -6,35 +6,15 @@ export const Section06 = () => {
       <Section>
         <Container>
           <TextContainer>
-            <Title>EXPANDIR POR UNIDADES PRÓPRIAS</Title>
+            <Title>Bônus Exclusivos:</Title>
             <Text>
-              <ul>
-                <li>
-                  Precisa de muito capital para abrir novas unidades
-                </li>
-                <li>Você tem que fazer a gestão de cada uma das unidades</li>
-                <li>Gasta muito a cada unidade aberta</li>
-                <li>
-                  Você é responsável por funcionários de todas as unidades
-                </li>
-                <li>Precisa cuidar 100% do operacional</li>
-                <li>Pouco escalável</li>
-                <li>Crescimento lento, pois há muitos custos</li>
-              </ul>
+              - Sessões de Mentoria: Participe de sessões ao vivo para
+              esclarecer dúvidas e receber orientação personalizada.
             </Text>
-          </TextContainer>
-          <TextContainer>
-            <Title>EXPANDIR POR FRANQUIAS</Title>
             <Text>
-              <ul>
-                <li>O franqueado é quem investe para abrir sua unidade</li>
-                <li>O franqueado faz a gestão da própria unidade</li>
-                <li>Recebe taxa de franquia a cada unidade aberta</li>
-                <li>O franqueado é responsável pelos próprios funcionários</li>
-                <li>Delega o operacional e foca na expansão</li>
-                <li>Muito escalável</li>
-                <li>Crescimento rápido com capital de terceiros</li>
-              </ul>
+              - Material de Apoio: Tenha acesso a recursos adicionais,
+              checklists e modelos para facilitar a implementação das
+              estratégias aprendidas.
             </Text>
           </TextContainer>
         </Container>
