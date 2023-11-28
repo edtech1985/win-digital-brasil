@@ -20,6 +20,7 @@ export const CTAButton = styled.button`
   }
 
   @media (min-width: 400px) and (max-width: 600px) {
+    font-size: 0.5rem;
   }
 
   @media only screen and (min-width: 768px) {

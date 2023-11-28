@@ -32,6 +32,7 @@ export const HeaderContainer = styled.header<HeaderProps>`
   }
 
   @media (min-width: 400px) and (max-width: 600px) {
+    padding: 1rem 0;
   }
 
   @media only screen and (min-width: 768px) {
