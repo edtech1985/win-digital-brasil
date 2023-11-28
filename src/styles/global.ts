@@ -15,8 +15,6 @@ const GlobalStyle = createGlobalStyle`
       font-weight: 600;
       color: var(--text-sand);
       text-align: center;
-      margin: 0 0 1rem 0;
-      padding: 0 0 0 0;
     }
 
     h2 {
@@ -60,8 +58,6 @@ const GlobalStyle = createGlobalStyle`
       font-weight: 400;
       color: var(--text-sand);
       text-align: center;
-      margin: 0 0 1rem 0;
-      padding: 0 0 0 0;
     }
 
 body {

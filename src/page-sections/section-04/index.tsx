@@ -6,18 +6,20 @@ export const Section04 = () => {
     <>
       <Section>
         <Title>Por que este curso é essencial para você?</Title>
-
+        <Subtitle>Experiência Comprovada</Subtitle>
         <Text>
-          - Experiência Comprovada: Minha trajetória no mundo das franquias deu
-          origem a estratégias eficazes, testadas e comprovadas.
+          Minha trajetória no mundo das franquias deu origem a estratégias
+          eficazes, testadas e comprovadas.
         </Text>
+        <Subtitle>Resultados Tangíveis</Subtitle>
         <Text>
-          - Resultados Tangíveis: Aprenda a replicar seu modelo de negócio de
-          forma consistente, expandindo e multiplicando seus lucros.
+          Aprenda a replicar seu modelo de negócio de forma consistente,
+          expandindo e multiplicando seus lucros.
         </Text>
+        <Subtitle>Acesso a Conhecimento Exclusivo</Subtitle>
         <Text>
-          - Acesso a Conhecimento Exclusivo: Desvende segredos, estratégias e
-          táticas que só os grandes empresários de franquias conhecem.
+          Desvende segredos, estratégias e táticas que só os grandes empresários
+          de franquias conhecem.
         </Text>
 
         <CTAContainer>

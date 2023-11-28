@@ -7,6 +7,7 @@ import {
   LogoContainer,
   Logo,
   NavContainer,
+  CTAContainer,
 } from "./styles";
 import { CTAButton } from "../../components/cta-button";
 
@@ -24,7 +25,7 @@ export const Section01Header = () => {
       hovered={hovered}
     >
       <LogoContainer>
-        <Logo>Win Digital Brasil</Logo>
+        <Logo>Logo</Logo>
       </LogoContainer>
       <NavContainer>
         <NavList>
@@ -43,11 +44,11 @@ export const Section01Header = () => {
           <NavItem>
             <NavLink href="#section5">Contato</NavLink>
           </NavItem>
-          <NavItem>
-            <CTAButton>Inscreva-se</CTAButton>
-          </NavItem>
         </NavList>
       </NavContainer>
+      <CTAContainer>
+        <CTAButton>Inscreva-se</CTAButton>
+      </CTAContainer>
     </HeaderContainer>
   );
 };

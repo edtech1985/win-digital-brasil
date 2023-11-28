@@ -8,7 +8,7 @@ interface HeaderProps {
 
 export const HeaderContainer = styled.header<HeaderProps>`
   background-color: var(--background-brown);
-  padding: 2rem 0;
+  padding: 1rem;
   width: 100%;
   max-width: 100vw;
   height: auto;
@@ -20,7 +20,7 @@ export const HeaderContainer = styled.header<HeaderProps>`
   transition: background-color 1.5s, opacity 1.5s;
   z-index: 1000;
   opacity: ${(props) => (props.hovered ? 1 : 0.4)};
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   &:hover {
@@ -46,16 +46,19 @@ export const HeaderContainer = styled.header<HeaderProps>`
 `;
 
 export const LogoContainer = styled.div`
-  width: 25%;
+  width: auto;
   height: 100%;
   text-align: center;
+  background-color: yellow;
+  padding: 1rem;
 `;
 
 export const Logo = styled.h3`
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: var(--text-sand-light);
   font-weight: bold;
   margin: 0;
+  background-color: red;
 
   @media (max-width: 400px) {
     font-size: 0.75rem;
@@ -72,11 +75,12 @@ export const Logo = styled.h3`
   }
 
   @media only screen and (min-width: 1200px) {
+    font-size: 2rem;
   }
 `;
 
 export const NavContainer = styled.nav`
-  width: 75%;
+  padding: 1rem;
   height: 100%;
   text-align: center;
   display: flex;
@@ -90,6 +94,21 @@ export const NavList = styled.ul`
 
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 400px) {
+  }
+
+  @media (min-width: 400px) and (max-width: 600px) {
+  }
+
+  @media only screen and (min-width: 768px) {
+  }
+
+  @media only screen and (min-width: 992px) {
+  }
+
+  @media only screen and (min-width: 1200px) {
+  }
 `;
 
 export const NavItem = styled.li`
@@ -99,8 +118,20 @@ export const NavItem = styled.li`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 600px) {
-    margin: 0 5px;
+  @media (max-width: 400px) {
+    margin: 0;
+  }
+
+  @media (min-width: 400px) and (max-width: 600px) {
+  }
+
+  @media only screen and (min-width: 768px) {
+  }
+
+  @media only screen and (min-width: 992px) {
+  }
+
+  @media only screen and (min-width: 1200px) {
   }
 `;
 
@@ -118,14 +149,30 @@ export const NavLink = styled.a`
   }
 
   @media (max-width: 400px) {
-    font-size: 0.4rem;
-  }
-
-  @media (min-width: 401px) and (max-width: 550px) {
-    font-size: 0.5rem;
-  }
-
-  @media (min-width: 551px) and (max-width: 768px) {
     font-size: 0.75rem;
+    padding: 0.5rem;
   }
+
+  @media (min-width: 400px) and (max-width: 600px) {
+    font-size: 0.8rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+  }
+
+  @media only screen and (min-width: 992px) {
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+`;
+
+export const CTAContainer = styled.div`
+  width: auto;
+  height: 100%;
+  text-align: center;
+  background-color: yellow;
+  padding: 0.5rem 1rem;
 `;

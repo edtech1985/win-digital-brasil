@@ -10,6 +10,7 @@ export const CTAButton = styled.button`
   margin: 0.5rem 0;
   text-decoration: none;
   transition: background-color 0.5s;
+  white-space: nowrap;
 
   &:hover {
     background-color: var(--background-brown-dark);
@@ -23,7 +24,12 @@ export const CTAButton = styled.button`
     font-size: 0.5rem;
   }
 
+  @media (min-width: 600px) and (max-width: 768px) {
+    font-size: 0.5rem;
+  }
+
   @media only screen and (min-width: 768px) {
+    font-size: 0.75rem;
   }
 
   @media only screen and (min-width: 992px) {

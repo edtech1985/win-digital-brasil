@@ -4,7 +4,7 @@ export const Section = styled.section`
   max-width: 100vw;
   width: 100%;
   height: auto;
-  padding: 2rem;
+  padding: 1rem 2rem;
   margin: 0 0 0 0;
   position: relative;
   overflow: hidden;
@@ -14,15 +14,16 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--text-dark);
   text-align: center;
-  margin: 0 0 1rem 0;
-  padding: 0 0 0 0;
+  margin: 1rem;
+  padding: 0;
   white-space: break-spaces;
+  padding-bottom: 0.75rem;
 
   @media screen and (max-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 `;
 
@@ -31,21 +32,44 @@ export const Subtitle = styled.h3`
   font-weight: 600;
   color: var(--text-dark);
   text-align: center;
-  margin: 0 0 1rem 0;
-  padding: 0 0 0 0;
+  margin: 1rem;
+  padding: 0;
 
   @media screen and (max-width: 600px) {
-    font-size: 1.25rem;
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 601px) {
+    margin: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 1rem;
+    padding-top: 0.5rem;
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1.75rem;
   }
 `;
 
 export const Text = styled.p`
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: var(--text-dark);
   text-align: center;
-  margin: 0 0 1rem 0;
-  padding: 0 0 0 0;
+  padding: 1rem;
+
+  @media screen and (min-width: 1024px) {
+    padding: 0;
+  }
 `;
 
 export const CTAContainer = styled.div`
@@ -53,4 +77,17 @@ export const CTAContainer = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding-top: 1.5rem;
+
+  @media screen and (max-width: 600px) {
+    padding: 0;
+  }
+
+  @media screen and (min-width: 600px) {
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 1rem;
+  }
 `;

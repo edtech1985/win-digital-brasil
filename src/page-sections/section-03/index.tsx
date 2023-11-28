@@ -3,15 +3,17 @@ import {
   CTAContainer,
   Card,
   CardText,
+  CardTitle,
   CardsContainer,
   Content,
   Section,
+  Subtitle,
   Title,
 } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBook,
   faCommentsDollar,
-  faPhoneVolume,
   faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 import { CTAButton } from "../../components/cta-button";
@@ -30,16 +32,19 @@ export const Section03 = () => {
           </CTAContainer>
           <YouTubeVideo />
 
+          <Subtitle>Por que este curso é essencial para você?</Subtitle>
           <CardsContainer>
             <Card>
               <FontAwesomeIcon
-                icon={faPhoneVolume}
-                shake
+                icon={faTrophy}
+                bounce
                 size="xl"
                 style={{ color: "#000" }}
               />
+              <CardTitle>Experiência Comprovada</CardTitle>
               <CardText>
-                Compreensão abrangente do processo de leilão de imóveis
+                Minha trajetória no mundo das franquias deu origem a estratégias
+                eficazes, testadas e comprovadas.
               </CardText>
             </Card>
             <Card>
@@ -49,35 +54,29 @@ export const Section03 = () => {
                 size="xl"
                 style={{ color: "#000" }}
               />
+              <CardTitle>Resultados Tangíveis</CardTitle>
               <CardText>
-                Conhecimento sobre como pesquisar e avaliar imóveis antes do
-                leilão
+                Aprenda a replicar seu modelo de negócio de forma consistente,
+                expandindo e multiplicando seus lucros.
               </CardText>
             </Card>
             <Card>
               <FontAwesomeIcon
-                icon={faTrophy}
+                icon={faBook}
                 bounce
                 size="xl"
                 style={{ color: "#000" }}
               />
+              <CardTitle>Acesso a Conhecimento Exclusivo</CardTitle>
               <CardText>
-                Estratégias eficazes para fazer lances e aumentar suas chances
-                de sucesso
-              </CardText>
-            </Card>
-            <Card>
-              <FontAwesomeIcon
-                icon={faTrophy}
-                bounce
-                size="xl"
-                style={{ color: "#000" }}
-              />
-              <CardText>
-                Orientações sobre como lidar com questões legais e contratuais
+                Desvende segredos, estratégias e táticas que só os grandes
+                empresários de franquias conhecem.
               </CardText>
             </Card>
           </CardsContainer>
+          <CTAContainer>
+            <CTAButton>Quero Me Inscrever!</CTAButton>
+          </CTAContainer>
         </Content>
       </Section>
     </>
