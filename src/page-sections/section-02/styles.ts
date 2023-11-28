@@ -11,9 +11,22 @@ export const Section = styled.section`
   width: 100%;
   height: auto;
 
-  @media screen and (max-width: 600px) {
-    margin-top: 3rem;
+  @media (max-width: 400px) {
+    padding: 1rem 0;
+  }
+
+  @media (min-width: 400px) and (max-width: 600px) {
+    margin-top: 10rem;
     padding: 0 2rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+  }
+
+  @media only screen and (min-width: 992px) {
+  }
+
+  @media only screen and (min-width: 1200px) {
   }
 `;
 
@@ -26,6 +39,6 @@ export const Title = styled.h1`
   padding: 0 0 0 0;
 
   @media screen and (max-width: 600px) {
-font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 `;

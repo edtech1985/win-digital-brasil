@@ -1,6 +1,6 @@
 import { Container, Section, Text, TextContainer, Title } from "./styles";
 
-export const Section06 = () => {
+export const Section08 = () => {
   return (
     <>
       <Section>

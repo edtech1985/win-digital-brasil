@@ -15,8 +15,19 @@ export const CTAButton = styled.button`
     background-color: var(--background-brown-dark);
   }
 
-  @media (max-width: 600px) {
-    font-size: 1.25rem;
-    height: auto;
+  @media (max-width: 400px) {
+    font-size: 0.5rem;
+  }
+
+  @media (min-width: 400px) and (max-width: 600px) {
+  }
+
+  @media only screen and (min-width: 768px) {
+  }
+
+  @media only screen and (min-width: 992px) {
+  }
+
+  @media only screen and (min-width: 1200px) {
   }
 `;

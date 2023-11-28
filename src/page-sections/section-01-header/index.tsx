@@ -1,5 +1,14 @@
 import { useState } from "react";
-import { HeaderContainer, NavList, NavItem, NavLink } from "./styles";
+import {
+  HeaderContainer,
+  NavList,
+  NavItem,
+  NavLink,
+  LogoContainer,
+  Logo,
+  NavContainer,
+} from "./styles";
+import { CTAButton } from "../../components/cta-button";
 
 export const Section01Header = () => {
   const [hovered, setHovered] = useState(false);
@@ -14,28 +23,31 @@ export const Section01Header = () => {
       }}
       hovered={hovered}
     >
-      <nav>
+      <LogoContainer>
+        <Logo>Win Digital Brasil</Logo>
+      </LogoContainer>
+      <NavContainer>
         <NavList>
           <NavItem>
-            <NavLink href="#section1">Sobre Nós</NavLink>
+            <NavLink href="#section1">Início</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#section2">Nosso Curso</NavLink>
+            <NavLink href="#section2">Curso</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#section3">Franqueados</NavLink>
+            <NavLink href="#section4">Bônus</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#section4">Investimento e Qualidade</NavLink>
+            <NavLink href="#section5">Depoimentos</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="#section5">Contato</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="#section5">Social Media</NavLink>
+            <CTAButton>Inscreva-se</CTAButton>
           </NavItem>
         </NavList>
-      </nav>
+      </NavContainer>
     </HeaderContainer>
   );
 };

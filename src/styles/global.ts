@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    max-width: 100vw;
     box-sizing: border-box;
 }
     
@@ -64,7 +65,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
 body {
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
