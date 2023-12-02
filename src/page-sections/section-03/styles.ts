@@ -110,7 +110,7 @@ export const Card = styled.div`
   height: 15rem;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: var(--background-light);
+  background-color: var(--background-dark);
 
   @media screen and (max-width: 600px) {
     width: 100%;

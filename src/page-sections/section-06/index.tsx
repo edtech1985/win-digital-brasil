@@ -1,24 +1,65 @@
-import { Container, Section, Text, TextContainer, Title } from "./styles";
+import {
+  Heading,
+  Highlight,
+  Text,
+  VStack,
+  Card,
+  CardHeader,
+  CardBody,
+  Stack,
+  StackDivider,
+} from "@chakra-ui/react";
 
 export const Section06 = () => {
   return (
     <>
-      <Section>
-        <Container>
-          <TextContainer>
-            <Title>Bônus Exclusivos:</Title>
-            <Text>
-              - Sessões de Mentoria: Participe de sessões ao vivo para
-              esclarecer dúvidas e receber orientação personalizada.
-            </Text>
-            <Text>
-              - Material de Apoio: Tenha acesso a recursos adicionais,
-              checklists e modelos para facilitar a implementação das
-              estratégias aprendidas.
-            </Text>
-          </TextContainer>
-        </Container>
-      </Section>
+      <VStack py="16" bg="var(--background-light)">
+        <Card bg="var(--background-dark)" p="10">
+          <CardHeader>
+            <Heading>Bônus Exclusivos</Heading>
+          </CardHeader>
+
+          <CardBody>
+            <Stack divider={<StackDivider />} spacing="4" gap="4">
+              <VStack gap="6">
+                <Highlight
+                  query={["Sessões de Mentoria:"]}
+                  styles={{
+                    px: "2",
+                    py: "1",
+                    rounded: "full",
+                    bg: "var(--sand-light)",
+                  }}
+                >
+                  Sessões de Mentoria:
+                </Highlight>
+                <Text>
+                  Participe de sessões ao vivo para esclarecer dúvidas e receber
+                  orientação personalizada.
+                </Text>
+              </VStack>
+
+              <VStack gap="6">
+                <Highlight
+                  query={["Material de Apoio:"]}
+                  styles={{
+                    px: "2",
+                    py: "1",
+                    rounded: "full",
+                    bg: "var(--sand-light)",
+                  }}
+                >
+                  Material de Apoio:
+                </Highlight>
+                <Text>
+                  Tenha acesso a recursos adicionais, checklists e modelos para
+                  facilitar a implementação das estratégias aprendidas.
+                </Text>
+              </VStack>
+            </Stack>
+          </CardBody>
+        </Card>
+      </VStack>
     </>
   );
 };
