@@ -1,9 +1,8 @@
-import Franquias from "../../assets/franquias-dark.jpeg";
 import {
   Box,
+  Button,
   HStack,
   Heading,
-  Image,
   List,
   ListIcon,
   ListItem,
@@ -15,15 +14,17 @@ export const Section05 = () => {
   return (
     <>
       <VStack
-        p="2"
-        gap="10"
+        px={{ base: "4", sm: "10" }}
+        pt={{ base: "4", sm: "10" }}
+        pb={{ base: "2", sm: "2" }}
+        gap={{ base: "6", sm: "0" }}
         bg="var(--background-dark)"
         color="var(--text-sand-light)"
       >
         <Heading>O que você irá aprender</Heading>
-        <HStack gap="24">
+        <HStack gap="24" display={{ base: "block", sm: "flex" }}>
           <Box boxSize="md">
-            <VStack>
+            <VStack px={{ base: "6", sm: "0" }}>
               <List spacing={4}>
                 <ListItem>
                   <ListIcon as={CheckCircleIcon} color="green.500" />
@@ -54,10 +55,24 @@ export const Section05 = () => {
               </List>
             </VStack>
           </Box>
-          <Box boxSize="md">
-            <Image src={Franquias} alt="Maiores Franquias" />
-          </Box>
         </HStack>
+        <VStack pb="4">
+          <Button
+            bg="black"
+            border="2px solid"
+            borderColor="yellow.400"
+            borderRadius="lg"
+            size="lg"
+            _hover={{
+              background: "black",
+              color: "yellow.500",
+              borderColor: "yellow.500",
+              boxShadow: "0 0 0 2px #f6e05e",
+            }}
+          >
+            Quero Me Inscrever!
+          </Button>
+        </VStack>
       </VStack>
     </>
   );

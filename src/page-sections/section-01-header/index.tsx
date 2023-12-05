@@ -50,7 +50,19 @@ export const Section01Header = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Button>Inscreva-se</Button>
+            <Button
+              bg="black"
+              border="1px solid"
+              borderColor="yellow.400"
+              _hover={{
+                background: "black",
+                color: "yellow.500",
+                borderColor: "yellow.500",
+                boxShadow: "0 0 0 2px #f6e05e",
+              }}
+            >
+              Inscreva-se
+            </Button>
           </a>
         </Center>
       </HStack>

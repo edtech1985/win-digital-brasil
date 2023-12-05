@@ -1,5 +1,4 @@
-import { Button, HStack, Heading, Text, VStack } from "@chakra-ui/react";
-
+import { HStack, Heading, IconButton, VStack } from "@chakra-ui/react";
 import {
   faFacebook,
   faInstagram,
@@ -12,30 +11,34 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 export const Section010Contacts = () => {
   return (
     <>
-      <VStack p="14" bg="var(--background-dark)">
+      <VStack p={{ base: "4", sm: "14" }} bg="var(--background-dark)">
         <Heading>Contato e Redes Sociais</Heading>
         <HStack p="2">
           <FontAwesomeIcon icon={faPhone} size="2x" />
           <Heading> (51) 9815-7507</Heading>
         </HStack>
         <HStack p="2" gap="8">
-          <Button
-            colorScheme="facebook"
-            leftIcon={<FontAwesomeIcon icon={faFacebook} />}
+          <IconButton
+            bg="blue"
+            aria-label="Facebook"
+            icon={<FontAwesomeIcon icon={faFacebook} />}
           />
-          <Button
+          <IconButton
             color="white"
+            aria-label="Twitter"
             bg="blackAlpha.900"
-            leftIcon={<FontAwesomeIcon icon={faXTwitter} />}
+            icon={<FontAwesomeIcon icon={faXTwitter} />}
           />
-          <Button
-            colorScheme="pink"
-            leftIcon={<FontAwesomeIcon icon={faInstagram} />}
+          <IconButton
+            bg="pink.500"
+            aria-label="Instagram"
+            icon={<FontAwesomeIcon icon={faInstagram} />}
           />
 
-          <Button
-            colorScheme="linkedin"
-            leftIcon={<FontAwesomeIcon icon={faLinkedinIn} />}
+          <IconButton
+            bg="blue.700"
+            aria-label="Linkedin"
+            icon={<FontAwesomeIcon icon={faLinkedinIn} />}
           />
         </HStack>
       </VStack>

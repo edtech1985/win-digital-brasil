@@ -13,8 +13,8 @@ import {
 export const Section06 = () => {
   return (
     <>
-      <VStack py="16" bg="var(--background-light)">
-        <Card bg="var(--background-dark)" p="10">
+      <VStack py={{ base: "0", sm: "16" }} bg="var(--background-light)">
+        <Card bg="var(--background-dark)" p={{ base: "2", sm: "10" }}>
           <CardHeader>
             <Heading>Bônus Exclusivos</Heading>
           </CardHeader>
@@ -23,15 +23,16 @@ export const Section06 = () => {
             <Stack divider={<StackDivider />} spacing="4" gap="4">
               <VStack gap="6">
                 <Highlight
-                  query={["Sessões de Mentoria:"]}
+                  query={["Sessões de Mentoria"]}
                   styles={{
                     px: "2",
                     py: "1",
                     rounded: "full",
                     bg: "var(--sand-light)",
+                    fontSize: "xl",
                   }}
                 >
-                  Sessões de Mentoria:
+                  Sessões de Mentoria
                 </Highlight>
                 <Text>
                   Participe de sessões ao vivo para esclarecer dúvidas e receber
@@ -41,15 +42,16 @@ export const Section06 = () => {
 
               <VStack gap="6">
                 <Highlight
-                  query={["Material de Apoio:"]}
+                  query={["Material de Apoio"]}
                   styles={{
                     px: "2",
                     py: "1",
                     rounded: "full",
                     bg: "var(--sand-light)",
+                    fontSize: "xl",
                   }}
                 >
-                  Material de Apoio:
+                  Material de Apoio
                 </Highlight>
                 <Text>
                   Tenha acesso a recursos adicionais, checklists e modelos para

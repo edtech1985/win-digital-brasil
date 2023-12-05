@@ -83,6 +83,7 @@ body {
   --background-brown-light: #473F2A;
   --background-gold: #A68863;
   --background-light: #D9A05B;
+  --background-sand-light: #EDD9A9;
 
   --text-dark: #0D0D0D;
   --text-med: #3F4656;

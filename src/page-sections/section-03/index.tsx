@@ -1,77 +1,109 @@
-import { YouTubeVideo } from "./YouTubeVideo";
-import { Card } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBook,
   faCommentsDollar,
   faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
-import { Button, HStack, Heading, Text, VStack } from "@chakra-ui/react";
+import {
+  Card,
+  CardBody,
+  CardHeader,
+  Heading,
+  SimpleGrid,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 
 export const Section03 = () => {
   return (
     <>
-      <VStack pt="32" bg="var(--background-dark)">
-        <Heading color="var(--text-sand-light)">
-          {" "}
-          Transforme Seu Negócio em uma Franquia: Curso Online
-        </Heading>
+      <VStack p={{ base: "4", sm: "0" }}>
+        <VStack w="full" py="8" px="8" bg="var(--text-sand-dark)">
+          <Heading as="h3" color="var(--text-dark)">
+            Por que este curso é essencial para você?
+          </Heading>
 
-        <Heading>
-          Seja bem-vindo ao curso que revolucionará sua abordagem empresarial,
-          transformando seu negócio em uma franquia de sucesso.
-        </Heading>
-        <VStack p="8">
-          <Button>Quero Escalar o Meu Negócio</Button>
-        </VStack>
-        <YouTubeVideo />
-
-        <VStack w="full" py="8" bg="var(--background-gold)">
-          <Heading as="h3">Por que este curso é essencial para você?</Heading>
-          <HStack gap="8">
-            <Card>
+          <SimpleGrid
+            spacing={6}
+            templateColumns="repeat(auto-fill, minmax(250px, 3fr))"
+          >
+            <Card
+              size="lg"
+              overflow="hidden"
+              align="center"
+              bg="black"
+              border="3px solid"
+              borderColor="yellow.400"
+            >
+              <CardHeader style={{ height: "135px" }}>
+                <Heading as="h4" fontSize="22px">
+                  Experiência Comprovada
+                </Heading>
+              </CardHeader>
               <FontAwesomeIcon
                 icon={faTrophy}
                 bounce
                 size="xl"
                 style={{ color: "var(--sand)" }}
               />
-              <Heading>Experiência Comprovada</Heading>
-              <Text>
-                Minha trajetória no mundo das franquias deu origem a estratégias
-                eficazes, testadas e comprovadas.
-              </Text>
+              <CardBody>
+                <Text>
+                  Minha trajetória no mundo das franquias deu origem a
+                  estratégias eficazes, testadas e comprovadas.
+                </Text>
+              </CardBody>
             </Card>
-            <Card>
+            <Card
+              size="lg"
+              overflow="hidden"
+              bg="black"
+              border="3px solid"
+              borderColor="yellow.400"
+            >
+              <CardHeader style={{ height: "135px" }}>
+                <Heading as="h4" fontSize="22px">
+                  Resultados Tangíveis
+                </Heading>
+              </CardHeader>
               <FontAwesomeIcon
                 icon={faCommentsDollar}
                 beat
                 size="xl"
                 style={{ color: "var(--sand)" }}
               />
-              <Heading>Resultados Tangíveis</Heading>
-              <Text>
-                Aprenda a replicar seu modelo de negócio de forma consistente,
-                expandindo e multiplicando seus lucros.
-              </Text>
+              <CardBody>
+                <Text>
+                  Aprenda a replicar seu modelo de negócio de forma consistente,
+                  expandindo e multiplicando seus lucros.
+                </Text>
+              </CardBody>
             </Card>
-            <Card>
+            <Card
+              size="lg"
+              overflow="hidden"
+              bg="black"
+              border="3px solid"
+              borderColor="yellow.400"
+            >
+              <CardHeader style={{ height: "135px" }}>
+                <Heading as="h4" fontSize="22px">
+                  Acesso a Conhecimento Exclusivo
+                </Heading>
+              </CardHeader>
               <FontAwesomeIcon
                 icon={faBook}
                 bounce
                 size="xl"
                 style={{ color: "var(--sand)" }}
               />
-              <Heading>Acesso a Conhecimento Exclusivo</Heading>
-              <Text>
-                Desvende segredos, estratégias e táticas que só os grandes
-                empresários de franquias conhecem.
-              </Text>
+              <CardBody>
+                <Text>
+                  Desvende segredos, estratégias e táticas que só os grandes
+                  empresários de franquias conhecem.
+                </Text>
+              </CardBody>
             </Card>
-          </HStack>
-          <VStack p="8">
-            <Button>Quero Me Inscrever!</Button>
-          </VStack>
+          </SimpleGrid>
         </VStack>
       </VStack>
     </>
